@@ -1,7 +1,9 @@
 $darkColor: #080808;
 $lightColor: #F7F7F7;
+$midColor:#171717;
 $btnColor: rgb(0, 204, 240);
 $outline: 1px solid rgb(233, 233, 233);
+$fontFam: Arial;
 
 body, html {
   background-color: $darkColor;
@@ -18,7 +20,7 @@ body, html {
   position: fixed;
   top: 0px;
   text-align: center;
-  background-color: #F7F7F7;
+  background-color: $lightColor;
   box-shadow: 0 3px 15px -6px #000;
   /*NavBar*/
   z-index: 1;
@@ -28,7 +30,7 @@ body, html {
     padding: 1px 40px;
     color: #0F0F0F;
     font-size: 11px;
-    font-family: Arame;
+    font-family: $fontFam;
     cursor: pointer;
     transition: .1s;
     &:hover {
@@ -52,27 +54,12 @@ body, html {
 #homevideo {
   position: relative;
   width: 100%;
-  max-height: 100vh;
+  max-height: 70vh;
   overflow: hidden;
 }
 
 #video {
   width: 100%;
-}
-
-#landingLogo {
-  height: 100px;
-  width: 300px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  //margin-top: auto;
-  //margin-bottom: auto;
-  right: 0;
-  left: 0;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 1;
 }
 
 /*--------------------------S O C I A L-----------------------*/
@@ -83,7 +70,7 @@ body, html {
   left: 10px;
   height: 140px;
   width: 50px;
-  background-color: #F7F7F7;
+  background-color: $lightColor;
   border-radius: 100px;
   z-index: 1;
   box-shadow: 0 1px 15px -1px;
@@ -112,8 +99,8 @@ body, html {
 /*--------------------------A B O U T-----------------------*/
 
 #about {
-  font-family: Arame;
-  color: #F7F7F7;
+  font-family: $fontFam;
+  color: $lightColor;
   position: relative;
   text-align: center;
  // background-color: red; //for debugging only
@@ -128,17 +115,19 @@ body, html {
 /*---------------------------G A M E S------------------------*/
 
 #games {
-  color: #131313;
+  color:$darkColor; //Text color
   width: 350px;
-  background-color: #F7F7F7;
+  height: 400px;
+  border-radius: 3px;
+  background-color: $midColor;
   position: relative;
   top: 50px;
-  margin: auto;
+  margin: 10px;
   display: inline-block;/*aligns #games and #VFX horizontally*/
   transition: .2s ease;
   h1 {
     font-size: 15px;
-    font-family: sans-serif;
+    font-family: $fontFam;
     padding-left: 20px;
     padding-right: 20px;
     text-align: justify;
@@ -169,17 +158,19 @@ body, html {
 /*--------------------------V F X--------------------------*/
 
 #VFX {
-  color: #131313;
+  color:$darkColor; //Text color
   width: 350px;
-  background-color: #F7F7F7;
+  height: 400px;
+  border-radius: 3px;
+  background-color: $midColor;
   position: relative;
   top: 50px;
-  margin: auto;
+  margin: 10px;
   display: inline-block;/*aligns #games and #VFX horizontally*/
   transition: .2s ease;
   h1 {
     font-size: 15px;
-    font-family: sans-serif;
+    font-family: $fontFam;
     padding-left: 20px;
     padding-right: 20px;
     text-align: justify;
@@ -210,8 +201,8 @@ body, html {
 /*-------------------------C O N T A C T-----------------------*/
 
 #contact {
-  font-family: Arame;
-  color: #F7F7F7;
+  font-family: $fontFam;
+  color: $lightColor;
   position: relative;
   text-align: center;
   height: 100vh;
@@ -229,7 +220,7 @@ body, html {
 }
 
 form {
-  font-family: Arame;
+  font-family: $fontFam;
   font-size: 25px;
   top: 100px;
   bottom: 0;
@@ -258,7 +249,7 @@ input {
     border: 2px solid $btnColor;
     cursor: pointer;
     font-size: 25px;
-    font-family: Arame;
+    font-family: $fontFam;
     transition: .2s ease-in-out;
     &:hover {
       background-color: #00A9FF;
@@ -271,22 +262,22 @@ input {
 
 #footer {
   position: relative;
-  font-size: 15px;
-  top: 100px;
+  //top: 100px;
   text-align: center;
-  background-color: #000;
-  color: white;
+  background-color:black;
   height: 150px;
   p {
+    color: white; //Text color
+    font-size: 15px;
     display: inline-block;
     position: relative;
-    top: 10px;
+    margin:10px;
   }
 }
 
 #LiteLogo {
-  height: 65px;
-  width: 200px;
+  height: 50px;
+  width: 150px;
   position: relative;
-  top: 35px;
+  margin:10px;
 }

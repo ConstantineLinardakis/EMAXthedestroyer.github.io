@@ -25,7 +25,7 @@ body, html {
   padding: 1px 40px;
   color: #0F0F0F;
   font-size: 11px;
-  font-family: Arame;
+  font-family: Arial;
   cursor: pointer;
   -webkit-transition: .1s;
   transition: .1s;
@@ -49,7 +49,7 @@ body, html {
 #homevideo {
   position: relative;
   width: 100%;
-  max-height: 100vh;
+  max-height: 70vh;
   overflow: hidden;
 }
 
@@ -57,27 +57,12 @@ body, html {
   width: 100%;
 }
 
-#landingLogo {
-  height: 100px;
-  width: 300px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin-top: auto;
-  margin-bottom: auto;
-  right: 0;
-  left: 0;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 1;
-}
-
 /*--------------------------S O C I A L-----------------------*/
 #social {
   position: fixed;
   top: 40%;
   left: 10px;
-  height: 160px;
+  height: 140px;
   width: 50px;
   background-color: #F7F7F7;
   border-radius: 100px;
@@ -96,25 +81,27 @@ body, html {
 #IGLogo, #TwitterLogo, #FacebookLogo {
   height: 40px;
   width: 40px;
-  margin: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  opacity: .7;
   -webkit-transition: .1s ease-out;
   transition: .1s ease-out;
   border-radius: 30px;
 }
 
 #IGLogo:hover, #TwitterLogo:hover, #FacebookLogo:hover {
-  -webkit-box-shadow: 0 1px 15px -1px;
-          box-shadow: 0 1px 15px -1px;
+  opacity: 1;
+  -webkit-box-shadow: 0 1px 15px -1px black;
+          box-shadow: 0 1px 15px -1px black;
 }
 
 /*--------------------------A B O U T-----------------------*/
 #about {
-  font-family: Arame;
-  font-size: 40px;
+  font-family: Arial;
   color: #F7F7F7;
   position: relative;
   text-align: center;
-  height: 550px;
+  height: 100vh;
 }
 
 #about h2 {
@@ -123,38 +110,47 @@ body, html {
   top: 65px;
 }
 
-/*---------------------A B O U T  C O N T A I N E R--------------------*/
-#aboutContainer {
-  width: 100%;
-  margin: 0 auto;
-  /*contains #games and #VFX to help align horizontally*/
-}
-
 /*---------------------------G A M E S------------------------*/
 #games {
-  color: #131313;
+  color: #080808;
   width: 350px;
   height: 400px;
-  background-color: #F7F7F7;
+  border-radius: 3px;
+  background-color: #171717;
   position: relative;
   top: 50px;
-  margin: auto;
+  margin: 10px;
   display: inline-block;
   /*aligns #games and #VFX horizontally*/
-  -webkit-transition: .2s ease-out;
-  transition: .2s ease-out;
-}
-
-#games:hover {
-  top: 45px;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
 }
 
 #games h1 {
   font-size: 15px;
-  font-family: sans-serif;
+  font-family: Arial;
   padding-left: 20px;
   padding-right: 20px;
   text-align: justify;
+}
+
+#gamesAboutBtn {
+  width: 100px;
+  height: 30px;
+  position: relative;
+  background-color: #00ccf0;
+  border: 2px solid #00ccf0;
+  font-family: Roboto;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+#gamesAboutBtn:hover {
+  background-color: #00A9FF;
+  background: rgba(0, 17, 19, 0.6);
 }
 
 #gamesvid {
@@ -163,78 +159,64 @@ body, html {
 
 /*--------------------------V F X--------------------------*/
 #VFX {
-  color: #131313;
+  color: #080808;
   width: 350px;
   height: 400px;
-  background-color: #F7F7F7;
+  border-radius: 3px;
+  background-color: #171717;
   position: relative;
   top: 50px;
-  text-align: justify;
-  margin: auto;
+  margin: 10px;
   display: inline-block;
   /*aligns #games and #VFX horizontally*/
-  -webkit-transition: .2s ease-out;
-  transition: .2s ease-out;
-}
-
-#VFX:hover {
-  top: 45px;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
 }
 
 #VFX h1 {
   font-size: 15px;
-  font-family: sans-serif;
+  font-family: Arial;
   padding-left: 20px;
   padding-right: 20px;
+  text-align: justify;
+}
+
+#vfxAboutBtn {
+  width: 100px;
+  height: 30px;
+  position: relative;
+  background-color: #00ccf0;
+  border: 2px solid #00ccf0;
+  font-family: Roboto;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+#vfxAboutBtn:hover {
+  background-color: #00A9FF;
+  background: rgba(0, 17, 19, 0.6);
 }
 
 #VFXvid {
   width: 100%;
 }
 
-/*--------------------------V F X--------------------------*/
-#extra {
-  color: #131313;
-  width: 350px;
-  height: 400px;
-  background-color: #F7F7F7;
-  position: relative;
-  top: 50px;
-  text-align: justify;
-  margin: auto;
-  display: inline-block;
-  /*aligns #games and #VFX horizontally*/
-  -webkit-transition: .2s ease-out;
-  transition: .2s ease-out;
-}
-
-#extra:hover {
-  top: 45px;
-}
-
-#extra h1 {
-  font-size: 15px;
-  font-family: sans-serif;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-#extraVid {
-  width: 100%;
-}
-
 /*-------------------------C O N T A C T-----------------------*/
 #contact {
-  font-family: Arame;
-  font-size: 40px;
+  font-family: Arial;
   color: #F7F7F7;
   position: relative;
   text-align: center;
-  top: 0;
-  bottom: 0;
-  margin-top: auto;
-  margin-bottom: auto;
-  height: 500px;
+  height: 100vh;
+}
+
+#contact h2 {
+  font-size: 40px;
+  position: relative;
+  top: 65px;
 }
 
 #sentMessage {
@@ -244,7 +226,7 @@ body, html {
 }
 
 form {
-  font-family: Arame;
+  font-family: Arial;
   font-size: 25px;
   top: 100px;
   bottom: 0;
@@ -252,57 +234,57 @@ form {
 }
 
 input[type=text] {
-  width: 20%;
+  width: 350px;
   color: black;
   border: 1px solid #ccc;
   display: inline-block;
-  padding: 10px 0px;
+  padding: 10px 10px;
   margin: 5px 0;
   cursor: auto;
   font-family: Roboto;
   font-size: 15px;
+  border: none;
 }
 
 input[type=button] {
-  width: 20%;
-  background-color: #01BBFE;
+  width: 350px;
+  background-color: #00ccf0;
   color: white;
   padding: 10px 10px;
   margin: 5px 0;
-  border: none;
+  border: 2px solid #00ccf0;
   cursor: pointer;
   font-size: 25px;
-  font-family: Arame;
-  -webkit-transition: .2s ease-out;
-  transition: .2s ease-out;
+  font-family: Arial;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
 input[type=button]:hover {
   background-color: #00A9FF;
   background: rgba(1, 232, 255, 0.05);
-  outline: #01BBFE solid 1px;
 }
 
 /*-------------------------F O O T E R-----------------------*/
 #footer {
   position: relative;
-  font-size: 15px;
-  top: 100px;
   text-align: center;
-  background-color: #000;
-  color: white;
+  background-color: black;
   height: 150px;
 }
 
 #footer p {
+  color: white;
+  font-size: 15px;
+  display: inline-block;
   position: relative;
-  top: 10px;
+  margin: 10px;
 }
 
 #LiteLogo {
-  height: 65px;
-  width: 200px;
+  height: 50px;
+  width: 150px;
   position: relative;
-  top: 30px;
+  margin: 10px;
 }
 /*# sourceMappingURL=styleSheet.css.map */
