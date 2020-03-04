@@ -278,13 +278,12 @@ input[type=button]:hover {
   font-size: 15px;
   display: inline-block;
   position: relative;
-  margin: 10px;
 }
 
 #LiteLogo {
   height: 50px;
   width: 150px;
   position: relative;
-  margin: 10px;
+  margin: 20px;
 }
 /*# sourceMappingURL=styleSheet.css.map */
